@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(236, 165, 31);
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+#quote-box {
+  background-color: #eeeeee;
+  width: 30rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0.2rem;
+  box-shadow: 0px 12px 65px -20px rgba(87, 87, 87, 0.8);
+}
+.quote-box-top {
+  display: flex;
+  flex-direction: column;
+  color: rgb(236, 165, 31);
+}
+
+.quote-content {
+  display: flex;
+}
+
+.quote-content i {
+  margin-right: 0.5rem;
+}
+
+#text {
+  text-align: left;
+  padding: 0.5rem;
+  text-indent: 1rem;
+  font-weight: 500;
+}
+
+.quote-author {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: right;
+
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.3rem;
+}
+
+#author {
+  margin-left: 0.5rem;
+}
+
+.quote-box-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.quote-a {
+  display: flex;
+}
+
+.quote-a a {
+  text-decoration: none;
+
+  display: flex;
+  align-items: flex-end;
+}
+
+.quote-a a i {
+  font-size: 2.5rem;
+  margin-left: 0.4rem;
+  color: rgb(236, 165, 31);
+  transition: all 0.25s ease-in-out, transform 0.15s ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.quote-a a i:hover {
+  color: rgba(236, 165, 31, 0.8);
+}
+
+.quote-a:first-child a:first-child i:first-child {
+  margin-left: 0;
+}
+
+.quote-a a:focus,
+.quote-a a:active {
+  color: #000000;
+  text-decoration: none;
+}
+
+#new-quote {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: #ffffff;
+  background-color: rgb(236, 165, 31);
+  letter-spacing: 0.1rem;
+
+  border-radius: 0.2rem;
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.25s ease-in-out, transform 0.15s ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+#new-quote:focus {
+  outline: none;
+}
+
+#new-quote:active {
+  transform: scale(0.99);
+}
+
+#new-quote:hover {
+  background-color: rgba(236, 165, 31, 0.8);
+}
+
+.fa-quote-left {
+  position: relative;
+  top: 0.8rem;
+  left: 1.3rem;
+}
+
+.footer {
+  margin-top: 1.5rem;
+  color: #eeeeee;
+  font-size: 1.2rem;
+}
